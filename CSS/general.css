@@ -1,0 +1,39 @@
+.container {
+    max-width: 1260px;
+    margin-inline: auto;
+    padding: 0px 40px;
+}
+
+.btn {
+    border-radius: 5px;
+    background-color: var(--akcent);
+    color: #FFFFFF;
+    font-family: var(--second-family);
+    font-weight: 600;
+    font-size: 18px;
+    text-transform: uppercase;
+    padding: 14px 35px;
+    transition: all 0.3s;
+}
+
+.btn:hover {
+    background-color: #35aa8d;
+}
+
+.btn--transparent {
+    background-color: transparent;
+    border: 1px solid var(--akcent);
+    color: #000;
+}
+
+.btn--transparent:hover {
+    color: #FFFFFF;
+}
+
+.section-title {
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 120%;
+    text-transform: uppercase;
+    color: #000;
+}

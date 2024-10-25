@@ -1,0 +1,111 @@
+.header {
+    width: 100%;
+    padding-top: 30px;
+    position: absolute;
+}
+
+.header__content {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.logo {
+    color: #FFFFFF;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.logo::before {
+    display: inline-block;
+    content: "";
+    width: 30px;
+    height: 30px;
+    background-image: url(../img/icons/Mask\ group.png);
+    background-size: contain;
+}
+
+.nav {
+    background-color: #404F59;
+    border-radius: 0px 0px 10px 10px;
+    font-family: var(--second-family);
+    color: #FFFFFF;
+    padding: 20px 40px;
+    margin-top: -30px;
+}
+
+.nav__list {
+    display: flex;
+    gap: 30px;
+}
+
+.nav__link {
+    font-weight: 400;
+    font-size: 16px;
+    color: #FFFFFF;
+    transition: all 0, 3s;
+}
+
+.nav__link:hover {
+    text-decoration-line: underline;
+}
+
+.phone {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 120%;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.4);
+    display: flex;
+    column-gap: 10px;
+    align-items: center;
+}
+
+.phone span {
+    color: #FFFFFF;
+}
+
+.phone::before {
+    content: "";
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background-image: url(../img/icons/tel.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.burger {
+    width: 26px;
+    height: 20px;
+    z-index: 20;
+    position: relative;
+    display: none;
+}
+
+.burger__el {
+    display: block;
+    background-color: #FFFFFF;
+    border-radius: 1px;
+    height: 2px;
+    width: 100%;
+    position: absolute;
+}
+
+.burger__el:nth-child(1) {
+    top: 0;
+}
+
+.burger__el:nth-child(2) {
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.burger__el:nth-child(3) {
+    bottom: 0;
+}
